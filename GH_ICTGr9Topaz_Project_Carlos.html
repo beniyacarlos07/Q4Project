@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Conversion Calculator</title>
+</head>
+<body>
+<body class="container" style="background-color: #9FDAC0">
+    <br>
+    <center>
+    <h1 style="font-family: monospace; color:#ADAFE3">LENGTH CALCULATOR (by: Beniya Carlos)</h1>
+    <h3 style=" color: #ADAFE3; font-family: cursive;">A length conversion calculator is useful that creates easy conversion for the metric system as well as the units of length.</h3><br>
+    </center>
+    <center class="container" style="background-color: #AAC7DE; color: lightsalmon;">
+        <br>
+        <input type="text" id="id1"> <p style="color: black"> = </p> <p id= "id2"></p>
+        <br>
+    <div>
+        <button type="button" onclick="CFunction()" class="btn btn-outline-dark">CONVERT TO CENTIMETERS</button>
+        <button type="button" onclick="MFunction()" class="btn btn-outline-dark">CONVERT TO METERS</button>
+        <button type="button" onclick="KFunction()" class="btn btn-outline-dark">CONVERT TO KILOMETERS</button>
+    </div>
+        <br>
+        <script>
+            function CFunction() {
+                    var var1 = document.getElementById('id1').value;
+                    var CM = 10;
+                    var answer1 = var1 / CM
+                    document.getElementById('id2').innerHTML = answer1 + "cm";
+                }
+        </script>
+        <script>
+            function MFunction() {
+                    var var2 = document.getElementById('id1').value;
+                    var M = 1000;
+                    var answer2 = var2 / M
+                    document.getElementById('id2').innerHTML = answer2 + "m";
+                }
+</script>
+        <script>
+            function KFunction() {
+                    var var3 =
+document.getElementById('id1').value;
+                    var KM = 1e+6;
+                    var answer3 = var3 / KM
+                    document.getElementById('id2').innerHTML = answer3 + "km";
+                }
+        </script>
+    </center>
+</body>
+</html>
+</body>
+</html>
